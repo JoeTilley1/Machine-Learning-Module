@@ -123,7 +123,7 @@ real_probeB = uncorrupt(probeB)
 FE_probeB = FE(real_probeB,n)
 stdprobeB = standardisationB(FE_probeB)
 stdprobeB["ones"] = 1
-FS_stdprobeB_temp = stdprobeB[cols2] #This gives the exact features required to fit the model
+FS_stdprobeB = stdprobeB[cols2] #This gives the exact features required to fit the model
 
 #Giving predictions
 predictions = model.predict(FS_stdprobeB) #get prediction of class by regression model for each entry in stdprobeB
